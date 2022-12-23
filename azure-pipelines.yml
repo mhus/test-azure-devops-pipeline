@@ -11,14 +11,14 @@ pool:
 
 resources:
  repositories:
-  - repository: common-parent # The name used to reference this repository in the checkout step
+  - repository: summer-parent # The name used to reference this repository in the checkout step
     type: github
     endpoint: github.com_mhus
-    name: summerclouds/common-parent
+    name: mhus/summer-parent
 
 steps:
 - checkout: self
-- checkout: common-parent
+- checkout: summer-parent
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
