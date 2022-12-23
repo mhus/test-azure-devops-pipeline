@@ -25,6 +25,7 @@ steps:
     lsb_release -d
   displayName: 'Hello'
 - script: |
+    pwd
     cd ../summer-parent
     echo $(Build.BuildId) > touch.txt
     git add touch.txt
