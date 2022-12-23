@@ -9,7 +9,16 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+resources:
+ repositories:
+- repository: common-parent # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: github.com_mhus
+    name: summerclouds/common-parent
+
 steps:
+- checkout: self
+- checkout: common-parent
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
