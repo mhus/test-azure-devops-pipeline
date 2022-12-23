@@ -20,6 +20,7 @@ steps:
 - checkout: self
 - checkout: summer-parent
   clean: false
+  persistCredentials: true
 - script: |
     echo Hello, world!
     lsb_release -d
