@@ -19,6 +19,7 @@ resources:
 steps:
 - checkout: self
 - checkout: summer-parent
+  clean: false
 - script: |
     echo Hello, world!
     lsb_release -d
