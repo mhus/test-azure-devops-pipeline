@@ -13,7 +13,7 @@ resources:
  repositories:
   - repository: summer-parent # The name used to reference this repository in the checkout step
     type: github
-    endpoint: github.com_mhus
+    endpoint: hummel
     name: mhus/summer-parent
 
 steps:
