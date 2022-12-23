@@ -28,6 +28,10 @@ steps:
     pwd
     cd summer-parent
     echo $(Build.BuildId) > touch.txt
+
+    git config --global user.email "robonaut@mhus.de"
+    git config --global user.name "Robonaut"
+
     git add touch.txt
     git commit -m"Pipeline commit $(Build.BuildNumber)"
     git push
